@@ -1,0 +1,285 @@
+/* 
+  color palette
+  #EAEBED
+  #006989
+  #A3BAC3
+  #007090
+  #01A7C2
+*/
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+body{
+  background-color: #01A7C2;
+  color: #EAEBED;
+}
+
+.nav{
+  display:flex;
+  justify-content: center;
+  background-color: #006989;
+  border-bottom: 2px solid #00566e;
+  height: 50px;
+}
+.nav li{
+  float: left;
+  list-style: none;
+}
+
+.nav a{
+  text-decoration: none;
+  color: #EAEBED;
+  display: block;
+  padding: 10px;
+  margin: 5px 15px;
+  text-decoration: none;
+  font-size: 1em;
+}
+ .nav a:hover{
+  background-color: #00566e;
+  border-radius: 50px;
+  
+ }
+
+.container{
+  margin: 0 25%;
+}
+
+.pagInicial{
+  height: 100%;
+  width: 100%;
+  position:absolute;
+  left:0;
+  top:0;
+  
+  text-align: center;
+  justify-content: center;
+  display:table;
+}
+
+.pagInicial a{
+  color: #EAEBED;
+  margin:15px 35%;
+  border-radius: 8px;
+  background-color: #006989;
+  box-shadow: 5px 5px #00566e;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+.pagInicial a:hover {
+  border: 4px solid #00566e;
+}
+
+.meio{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+fieldset{
+  margin: 2em 0;
+  padding: 1em 2em;
+  border: 2px solid #A3BAC3;
+  border-radius: 6px;
+  min-width: 200px;
+  box-shadow: 5px 5px #00566e;
+}
+
+legend{
+  font-size: 1.25em;
+  padding: 0 .25em;
+  color: #EAEBED
+}
+
+label{
+  display: block;
+  margin-top: 1em;
+}
+
+.check label{
+  margin-top: 0;
+}
+
+label:first-of-type{
+  margin-top: 0;
+}
+
+input{
+  padding: .5em;
+  border: 1px solid #A3BAC3;
+}
+
+input:hover{
+  border: 4px solid #00566e;
+}
+
+input::placeholder{
+  color:#EAEBED;
+}
+
+input[type="text"],input[type="datetime-local"]{
+  background-color: #007090;
+  width: 25em;
+  border-radius: 8px;
+  box-shadow: 3px 3px #00566e;
+  color:#EAEBED;
+}
+
+::-webkit-calendar-picker-indicator{
+  background-color:#EAEBED;
+  cursor:pointer;
+  border-radius: 3px;
+}
+
+input[type="file"]{
+  background-color: #007090;
+  width: 25em;
+  border-radius: 8px;
+  box-shadow: 3px 3px #00566e;
+  cursor:pointer;
+}
+
+textarea{
+  background-color: #007090;
+  min-height: 8em;
+  min-width: 100%;
+  padding: .5em;
+  border-radius: 8px;
+  box-shadow: 3px 3px #00566e;
+  border: 1px solid #A3BAC3;
+  color:#EAEBED;
+}
+
+textarea:hover{
+  border: 4px solid #00566e;
+}
+
+textarea::placeholder{
+  color:#EAEBED;
+}
+
+.check{
+  margin-bottom: 1em;
+}
+
+.check p{
+  margin-bottom: 0;
+  margin-top: 1em;
+}
+
+input[type="checkbox"]+label{
+  display: inline-block;
+  padding-top: 0;
+  margin-top: 0;
+  
+}
+
+input[type="checkbox"]{
+  margin-left: 1.5em;
+  margin-right: 0;
+  cursor:pointer;
+  box-shadow: 2px 2px #00566e;
+}
+
+input[type="checkbox"]:first-of-type{
+  margin-left: 0;
+}
+
+input[type="submit"]{
+  padding: .5em 1em;
+  border-radius: 6px;
+  background-color: #007090;
+  color:#EAEBED;
+  font-size: .8em;
+  box-shadow: 2px 2px #00566e;
+  cursor:pointer;
+}
+
+.eventoBloco{
+  background-color: #006989;
+  display:inline-block;
+  margin: 5px;
+  min-width:200px;
+  max-width: 275px;
+  border: 2px solid #00566e;
+  box-shadow: 5px 5px #00566e;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.eventoBloco a{
+  text-align: center;
+  color: #EAEBED;
+  background-color: #006989;
+  text-decoration: none;
+  font-size: 2em;
+  display:block;
+  border-radius: 8px;
+}
+
+.eventoBloco a p{
+  font-size: .5em;
+}
+
+.eventoBloco:hover {
+  border: 4px solid #00566e;
+}
+
+.eventoBloco img{
+  min-height: 100px;
+  min-width: 100px;
+}
+
+.eventoDesc{
+  background-color: #006989;
+  display: inline-block;
+  margin: 15px;
+  max-width: 100%;
+  padding: 20px;
+  border: 2px solid #00566e;
+  box-shadow: 5px 5px #00566e;
+  border-radius: 8px;
+  justify-content: center;
+}
+
+.eventoDesc p{
+  padding-top: 10px;
+  text-align: center;
+  
+}
+
+.banner{
+  justify-content: center;
+  max-width: 100%;
+  margin:0;
+  border-radius: 10px;
+  box-shadow: 7px 7px #00566e;
+}
+
+.eventoDesc #nome{
+  font-size:2em;
+}
+
+.eventoDesc fieldset{
+  margin: 0;
+}
+
+.eventoDesc #nome{
+  text-align:center;
+}
+
+.eventoDesc #descricao, #dataInicio, #dataFim, #tipo, #adicionais{
+
+  border-radius: 10px;
+  box-shadow: 0 5px 5px 5px #00566e;
+}
+
+.eventoDesc legend{
+  margin: 15px 0 5px 0;
+  text-align: center;
+}
