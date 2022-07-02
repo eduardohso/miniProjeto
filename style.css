@@ -250,7 +250,6 @@ input[type="submit"]{
 .eventoDesc p{
   padding-top: 10px;
   text-align: center;
-  
 }
 
 .banner{
@@ -274,7 +273,6 @@ input[type="submit"]{
 }
 
 .eventoDesc #descricao, #dataInicio, #dataFim, #tipo, #adicionais{
-
   border-radius: 10px;
   box-shadow: 0 5px 5px 5px #00566e;
 }
@@ -282,4 +280,10 @@ input[type="submit"]{
 .eventoDesc legend{
   margin: 15px 0 5px 0;
   text-align: center;
+}
+
+p#adicionais{
+  padding-top: 10px;
+  text-align: center;
+  padding-bottom: 10px;
 }
