@@ -14,7 +14,7 @@
       <li><a href="cadastro.php">Cadastar evento</a></li>
     </ul>
   </div>
-  <div class="container">
+  <div class="container" id="eventoBloco">
 
     <?php
     include("connect.inc.php");
@@ -27,12 +27,11 @@
         $nome=$row["nome"];
         $descricao=$row["descricao"];
         $dataInicio=$row["dataInicio"];
-        $banner=base64_encode($row['banner']);
+        $banner=$row["banner"];
         
-
         echo "
           <div class='eventoBloco'>
-            <a href='eventoDescricao.php'><img class='banner' src='Screenshot_1.png'/><br>$nome<br><p>$descricao<br>$dataInicio</p></a>
+            <a href='eventoDescricao.php'><img class='banner' src='$banner'/><br>$nome<br><p>$descricao<br>$dataInicio</p></a>
           </div>";
       }
 

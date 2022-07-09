@@ -39,7 +39,7 @@
 
           <div class="check">
             <p>Possui:</p>
-            <input type="checkbox" name="wifi" id="wifi" value="Wifi">
+            <input type="checkbox" name="wifi" id="wifi" value="WIFI">
             <label>Wifi</label>
             <input type="checkbox" name="estacionamentoGratis" id="estacionamentoGratis" value="Estacionamento Grátis">
             <label>Estacionamento Gratis</label>

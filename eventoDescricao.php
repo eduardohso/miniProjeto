@@ -19,6 +19,7 @@
 
     <?php
     include("connect.inc.php");
+
     $sql = "SELECT * FROM evento";
     $result=$conn->query($sql);
 
@@ -43,7 +44,7 @@
 
         echo "
           <div class='eventoDesc'>
-            <img class='banner' src='Screenshot_1.png'/>
+            <img class='banner' src='$banner'/>
             <fieldset>
               <legend id='nome'>$nome</legend>
               <legend>Descrição:</legend>
@@ -59,9 +60,9 @@
         if($wifi||$estacionamentoGratis||$bebidaGratis!=''){
           echo "<legend>Possui:</legend><p id='adicionais'>";
           if($wifi!='')
-            echo "$wifi";
+            echo "$wifi<br>";
           if($estacionamentoGratis!='')
-            echo "$estacionamentoGratis";
+            echo "$estacionamentoGratis<br>";
           if($bebidaGratis!='')
             echo "$bebidaGratis";
         }
@@ -73,9 +74,7 @@
     }
 
     $conn->close();
-
-    ?>
-    
+  ?>
   </div>
 </body>
 </html>
