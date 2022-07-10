@@ -31,7 +31,7 @@
         $dataInicio=$row["dataInicio"];
         $dataFim=$row["dataFim"];
         $tipo=$row["tipo"];
-        $banner=$row["banner"];
+        $banner='uploads/'.$row["banner"];
         $wifi=$row["wifi"];
         $estacionamentoGratis=$row["estacionamentoGratis"];
         $bebidaGratis=$row["bebidaGratis"];

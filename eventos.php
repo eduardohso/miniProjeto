@@ -27,10 +27,12 @@
         $nome=$row["nome"];
         $descricao=$row["descricao"];
         $dataInicio=$row["dataInicio"];
-        $banner=$row["banner"];
+        $banner='uploads/'.$row["banner"];
+
+        $dataI = strtotime( $dataInicio );
+        $dataInicio = date( 'd/m/Y - H:i', $dataI );
         
-        echo "
-          <div class='eventoBloco'>
+        echo "<div class='eventoBloco'>
             <a href='eventoDescricao.php'><img class='banner' src='$banner'/><br>$nome<br><p>$descricao<br>$dataInicio</p></a>
           </div>";
       }
