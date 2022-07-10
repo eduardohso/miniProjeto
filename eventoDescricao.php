@@ -19,13 +19,13 @@
 
     <?php
     include("connect.inc.php");
+    $id= $_REQUEST['id'];
 
-    $sql = "SELECT * FROM evento";
+    $sql = "SELECT * FROM evento WHERE id='$id'";
     $result=$conn->query($sql);
 
     if($result->num_rows > 0){
       while($row = $result->fetch_assoc()){
-        $id=$row["id"];
         $nome=$row["nome"];
         $descricao=$row["descricao"];
         $dataInicio=$row["dataInicio"];

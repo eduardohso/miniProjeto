@@ -33,8 +33,12 @@
         $dataInicio = date( 'd/m/Y - H:i', $dataI );
         
         echo "<div class='eventoBloco'>
-            <a href='eventoDescricao.php'><img class='banner' src='$banner'/><br>$nome<br><p>$descricao<br>$dataInicio</p></a>
-          </div>";
+            <a href='eventoDescricao.php?id=$id'>
+              <img class='banner' src='$banner'/>
+              <br>$nome
+              <br><p>$descricao<br>$dataInicio</p>
+            </a>
+            </div>";
       }
 
     }else{

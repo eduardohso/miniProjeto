@@ -205,7 +205,7 @@ input[type="submit"]{
   float:left;
   margin: 5px;
   width: 275px;
-  height: 275px;
+  height: 300px;
   border: 2px solid #00566e;
   box-shadow: 5px 5px #00566e;
   border-radius: 8px;
@@ -220,6 +220,9 @@ input[type="submit"]{
   font-size: 2em;
   display:block;
   border-radius: 8px;
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
 }
 
 .container#eventoBloco{
@@ -228,6 +231,7 @@ input[type="submit"]{
 
 .eventoBloco a p{
   font-size: .5em;
+  max-width: 20em;
 }
 
 .eventoBloco a:hover {
@@ -236,13 +240,11 @@ input[type="submit"]{
 }
 
 .eventoBloco img{
-  min-height: 100px;
-  min-width: 100px;
-  margin-bottom:25px;
-}
-
-.eventoBloco .banner{
-  max-height: 150px;
+  height: 150px;
+  width: 260px;
+  margin-top: 10px;
+  margin-bottom:15px;
+  object-fit:cover;
 }
 
 .eventoDesc{
@@ -258,8 +260,9 @@ input[type="submit"]{
 }
 
 .eventoDesc p{
-  padding-top: 10px;
+  line-height:20px;
   text-align: center;
+  padding: 10px 15px;
 }
 
 .banner{
@@ -272,10 +275,12 @@ input[type="submit"]{
 
 .eventoDesc #nome{
   font-size:2em;
+  padding-top: 10px;
 }
 
 .eventoDesc fieldset{
   margin: 0;
+  margin-top: 10px;
 }
 
 .eventoDesc #nome{
