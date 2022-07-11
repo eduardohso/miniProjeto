@@ -1,0 +1,3 @@
+CREATE DATABASE miniProjeto;
+
+CREATE TABLE `miniProjeto`.`evento` ( `id` INT(11) NOT NULL AUTO_INCREMENT , `nome` VARCHAR(200) NOT NULL , `descricao` TEXT NOT NULL , `dataInicio` DATETIME NOT NULL , `dataFim` DATETIME NOT NULL , `tipo` VARCHAR(100) NOT NULL , `banner` VARCHAR(200) NOT NULL , `wifi` VARCHAR(100) NOT NULL , `estacionamentoGratis` VARCHAR(100) NOT NULL , `bebidaGratis` VARCHAR(100) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;

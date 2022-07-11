@@ -1,7 +1,6 @@
 <?php
 
   include('connect.inc.php');
-  $statusMsg = '';
 
   $nome=trim($_POST["nome"]);
   $descricao=trim($_POST['descricao']);

@@ -42,7 +42,7 @@
       }
 
     }else{
-      echo "0 results";
+      echo "<h1 class='container'>Não há eventos cadastrados!</h1>";
     }
 
     $conn->close();
