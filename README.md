@@ -1,4 +1,4 @@
-# MiniProjeto
+# MiniProjeto - Cadastro e Gerenciamento De Eventos
 
 Este projeto foi desenvolvido na disciplina de **Laboratório de Programação** da **Universidade Federal de Viçosa - Campus Rio Paranaíba (UFV-CRP)**. O sistema consiste em um cadastro e gerenciamento de eventos, utilizando **PHP** e **MySQL**, com o ambiente de desenvolvimento configurado no **XAMPP**.
 
